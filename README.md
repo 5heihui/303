@@ -2,13 +2,13 @@
 
 [Project Name] by [Team Name]
 
-Team: [Member 1], [Member 2], [Member 3], [Member 4] 
+Team: Lee Shei Hui, New Zhi XUan, Valerie Chia Xin Hui 
 
-Problem Statement: [Stress & Workload Manager / Travel Planner]
+Problem Statement: [Stress & Workload Manager]
 
 Video Presentation: [Unlisted Youtube Link] 
 
-Presentation Slides: [Public Link] 
+Presentation Slides: [ https://canva.link/ttubz4chef0js6n ] 
 
 1. Project Overview
 The Problem. State the causes as you understand them, who the stakeholders are and briefly mention what similar apps exist in the market (at least one) and why they fall short.
