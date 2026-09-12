@@ -1,16 +1,22 @@
 # 303
 
 [Project Name] by [Team Name]
+
 Team: [Member 1], [Member 2], [Member 3], [Member 4] 
+
 Problem Statement: [Stress & Workload Manager / Travel Planner]
+
 Video Presentation: [Unlisted Youtube Link] 
+
 Presentation Slides: [Public Link] 
 
 1. Project Overview
 The Problem. State the causes as you understand them, who the stakeholders are and briefly mention what similar apps exist in the market (at least one) and why they fall short.
 Our Solution. What it is in 3-4 sentences, then list out your feature-set
+
 2. Ideation & Process
 2.1 Ideas We Considered
+   
 Table of every distinct idea generated, with why each was kept or dropped, order it so that chosen ideas are listed first
 Idea
 Why it was dropped / kept
@@ -41,6 +47,7 @@ Fishbone diagrams
 Any other scribbles :)
 You can embed images in markdown like so:
 ![Mindmap](mindmap.png)
+
 2.3 Mentor Consultation
 Date
 Mentor
@@ -56,12 +63,13 @@ What Was Changed
 
 
 Even if you disagreed with a piece of feedback, you can say so and explain why. You will not be penalised for doing something against a mentor’s advice, it will still count as engaging with it.
+
 3. Design & Prototype
 UI Prototype: [ Public Link ]
 Check that it opens in an incognito window. This can be a link to Figma, Canva, Netlify, Vercel or any other board where you showcase your UI. It can be clickable with hyperlinks or simply ordered screenshots.
 We recommend you embed or link 4–8 key screens as images, with a caption on each explaining the interaction
-4. What Makes It Different
 
+4. What Makes It Different
 List out novel features and explain briefly which each is original or what the twist is.
 You can have a comparison table to compare with existing solutions named in section 1 but this is completely optional.
 
