@@ -75,8 +75,16 @@ Check that it opens in an incognito window. This can be a link to Figma, Canva, 
 We recommend you embed or link 4–8 key screens as images, with a caption on each explaining the interaction
 
 # 4. What Makes It Different
-List out novel features and explain briefly which each is original or what the twist is.
-You can have a comparison table to compare with existing solutions named in section 1 but this is completely optional.
+
+While our app provides typical features of a stress and workload manager, there are a few distinctions from them:
+
+- Our app provides encouragement to the user if the system detects they have been feeling down for quite some time. 
+- It also reminds the user to rest or take out unnecessary tasks if the system detects high level workload or unusual data from the health status report.
+- The user can connect the app to their smartwatch to track their heart rate, steps, blood pressure etc.
+
+
+Overall, our objective is to visualise tasks, and time management, while also reminding them when they might be overloaded, providing them with a clear vision of potential risks that may cause burnout provide a suitable recommendation. 
+
 
 # 5. Technical Architecture & Feasibility
 Tech stack
