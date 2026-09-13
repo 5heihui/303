@@ -1,6 +1,6 @@
 # 303
 
-[Project Name] by [Team Name]
+# MoodPulse by 303
 
 Team: Lee Shei Hui, New Zhi XUan, Valerie Chia Xin Hui 
 
