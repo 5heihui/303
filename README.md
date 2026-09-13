@@ -2,7 +2,7 @@
 
 # MoodPulse by 303
 
-Team: Lee Shei Hui, New Zhi XUan, Valerie Chia Xin Hui 
+Team: Lee Shei Hui, New Zhi Xuan, Valerie Chia Xin Hui 
 
 Problem Statement: Stress & Workload Manager
 
