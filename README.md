@@ -87,8 +87,76 @@ Overall, our objective is to visualize tasks, and time management, while also re
 
 
 # 5. Technical Architecture & Feasibility
-Tech stack
-Tell us your frontend, backend, database, APIs and services, as well as how and where you will be hosting. For each, try to tell us why you chose that technology, and what constraints you expect to face (For example, you chose Supabase because it’s free but you’ll still need a proxy)
-System architecture diagram (Optional, if you feel it would help the reviewers understand your architecture better)
-Build plan & scope
-Explicitly tell the reviewer what you plan to build during the building phase. Narrow scope will read as realistic and feasible, not as a lack of ambition.
+
+1. Tech stack
+   --------------
+
+Since our team has only beginner-level Python and HTML experience, we picked the simplest option that still lets us demo the core loop, rather than the most "correct" production.
+
+Frontend
+
+- HTML, CSS, and vanilla JavaScript.
+
+- Why: it's the one web technology all three of us already have some exposure to, so we spend our limited time building screens instead of learning a framework.
+
+- Constraint: no framework means more manual work for things like page navigation and reusable components. We'll keep the number of screens small (see Build Plan) to keep this manageable.
+
+
+Backend
+
+- Python with Flask.
+
+- Why: Flask is a very small, beginner-friendly framework. Since Python is the language we're most comfortable with, this lets us reuse what we already know instead of learning a second backend language.
+
+- Constraint: Flask's built-in server isn't meant for real production traffic, but that's fine — we only need it to run reliably for a demo, not at scale.
+
+Database
+
+- Firebase Firestore (free tier).
+
+- Why: no server setup required, has a simple Python SDK, and the free tier is enough for hackathon-scale data
+
+- Constraint: Firestore's free tier has daily read/write limits, and its query rules take some learning. As a fallback, we can swap this for a local SQLite file or even a plain JSON file if Firebase setup eats into build time — the app's logic doesn't depend on which storage we use.
+
+APIs / services
+
+- Chatbot: rather than building real NLP, we'll use a hosted LLM API (e.g. OpenAI's API, which offers free trial credit) for the live chat feature.
+
+- Constraint: this needs an API key, which must never be exposed in frontend code — it has to be called from our Flask backend, not directly from the browser. If API cost/setup time becomes a blocker, our fallback is a small set of scripted/rule-based responses (e.g. keyword-triggered replies) that still demo the "talk to your avatar" concept without a live model.
+
+Health tracking (sleep, steps, Apple Watch sync): true HealthKit/Apple Watch integration requires a paid Apple Developer account and native iOS development, which is out of scope for our skill level and timeframe.
+
+- Our plan: simulate this with manual input fields (the user types their sleep hours, step count, etc.) for the prototype, and list real wearable integration as future work.
+
+Hosting
+
+- Frontend: GitHub Pages (free, static hosting, simple to deploy from a repo).
+
+
+- Backend: Render or PythonAnywhere free tier (both support Flask apps with minimal configuration).
+
+- Constraint: free-tier backends can be slow to "wake up" after inactivity (cold starts). We'll account for this in our demo by keeping the app open/warm before presenting.
+
+
+3. Build plan & scope
+   -------------------
+Given three beginner developers and a short build window, we're deliberately narrowing scope to a working core loop rather than all five features from our pitch deck. This is what we plan to actually build:
+
+1. Must-build (core demo):
+
+- To-do list with manual task entry, categories, and a done/undo toggle
+- Daily mood/stress check-in (simple 1–5 scale, stored per day)
+- A basic "capacity" dashboard that combines task load + mood entries into one summary number/view
+
+2. Build if time allows:
+
+- Timetable view (static week grid, manually entered classes/events)
+- Rule-based recovery nudge (e.g. "if 3+ high-stress days logged this week, show a rest reminder")
+- Chatbot screen, using scripted responses first, upgraded to a live API call if time and budget allow
+
+3. Explicitly out of scope for this prototype (documented as future work):
+
+- Real Apple Watch / HealthKit integration
+- Live AI chatbot with full conversational memory
+- Avatar/companion customization and unlockables
+- Push notifications / native mobile app
