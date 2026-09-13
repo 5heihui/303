@@ -54,7 +54,7 @@ You can embed images in markdown like so:
 
 2.3 Mentor Consultation
 | Date | Mentor | Feedback Received | What was changed |
-|------|-----|
+|---------|--------|----------|--------|
 | 3rd September | Zack Khong | Advised us to focus more on the health status feature of our app | Updated our health status function and focused on that more |
 
 
