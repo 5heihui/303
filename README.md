@@ -83,7 +83,7 @@ While our app provides typical features of a stress and workload manager, there 
 - The user can connect the app to their smartwatch to track their heart rate, steps, blood pressure etc.
 
 
-Overall, our objective is to visualise tasks, and time management, while also reminding them when they might be overloaded, providing them with a clear vision of potential risks that may cause burnout provide a suitable recommendation. 
+Overall, our objective is to visualize tasks, and time management, while also reminding them when they might be overloaded, providing them with a clear vision of potential risks that may cause burnout and give a suitable recommendation. 
 
 
 # 5. Technical Architecture & Feasibility
